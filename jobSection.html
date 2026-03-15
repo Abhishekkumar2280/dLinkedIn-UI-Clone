@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jobs - LinkedIn Clone</title>
+    <link rel="stylesheet" href="jobs.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background: #f3f2ef;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 50px;
+        background: white;
+        border-bottom: 1px solid #ddd;
+        position: sticky;
+        top: 0;
+    }
+
+    .logo {
+        font-weight: bold;
+        font-size: 22px;
+        color: #0a66c2;
+    }
+
+    .navbar input {
+        width: 300px;
+        padding: 7px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+    }
+
+    .nav-links a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+    }
+
+    .jobs-container {
+        width: 90%;
+        margin: 40px auto;
+        display: flex;
+        gap: 20px;
+    }
+
+    /* Sidebar */
+    .jobs-sidebar {
+        width: 25%;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .jobs-sidebar h2 {
+        margin-bottom: 20px;
+    }
+
+    .jobs-sidebar ul {
+        list-style: none;
+    }
+
+    .jobs-sidebar li {
+        padding: 10px 0;
+        color: #555;
+        cursor: pointer;
+    }
+
+    .jobs-sidebar li:hover {
+        color: #0a66c2;
+    }
+
+    /* Content */
+    .jobs-content {
+        width: 75%;
+    }
+
+    /* Search Box */
+    .search-box {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .search-box input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        flex: 1;
+    }
+
+    .search-box button {
+        padding: 10px 20px;
+        background: #0a66c2;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    .search-box button:hover {
+        background: #004182;
+    }
+
+    /* Job Card */
+    .job-card {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .job-card h3 {
+        margin-bottom: 5px;
+    }
+
+    .company {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .location {
+        color: gray;
+        margin-bottom: 10px;
+    }
+
+    .desc {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .job-card button {
+        padding: 8px 15px;
+        background: #0a66c2;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .job-card button:hover {
+        background: #004182;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">LinkedIn</div>
+        <input type="text" placeholder="Search" />
+        <div class="nav-links">
+            <a href="linkedin.html">Home</a>
+            <a href="myNetwork.html">My Network</a>
+            <a href="jobSection.html">Jobs</a>
+            <a href="messageSection.html">Messaging</a>
+            <a href="notificationSection.html">Notifications</a>
+        </div>
+    </nav>
+    <div class="jobs-container">
+
+        <!-- Left Sidebar -->
+        <div class="jobs-sidebar">
+            <h2>Jobs</h2>
+            <ul>
+                <li>My Jobs</li>
+                <li>Preferences</li>
+                <li>Skill Assessments</li>
+                <li>Interview Prep</li>
+                <li>Job Alerts</li>
+            </ul>
+        </div>
+
+        <!-- Job Listings -->
+        <div class="jobs-content">
+
+            <div class="search-box">
+                <input type="text" placeholder="Search jobs">
+                <input type="text" placeholder="Location">
+                <button>Search</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Frontend Developer</h3>
+                <p class="company">Tech Solutions Pvt Ltd</p>
+                <p class="location">Mumbai, India</p>
+                <p class="desc">Looking for a skilled Frontend Developer with strong knowledge of HTML, CSS and
+                    JavaScript.</p>
+                <button>Apply</button>
+            </div>
+
+            <div class="job-card">
+                <h3>UI/UX Designer</h3>
+                <p class="company">Creative Studio</p>
+                <p class="location">Delhi, India</p>
+                <p class="desc">We are hiring a creative UI/UX Designer with experience in Figma and design systems.</p>
+                <button>Apply</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Software Engineer</h3>
+                <p class="company">Innovatech</p>
+                <p class="location">Bangalore, India</p>
+                <p class="desc">Seeking a Software Engineer with problem-solving skills and strong programming
+                    fundamentals.</p>
+                <button>Apply</button>
+            </div>
+            <div class="job-card">
+                <h3>Backend Developer</h3>
+                <p class="company">CodeCraft Technologies</p>
+                <p class="location">Hyderabad, India</p>
+                <p class="desc">Hiring a Backend Developer with experience in Node.js, Express, and MongoDB.</p>
+                <button>Apply</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Full Stack Developer</h3>
+                <p class="company">NextGen Solutions</p>
+                <p class="location">Pune, India</p>
+                <p class="desc">Looking for a Full Stack Developer skilled in MERN stack and REST APIs.</p>
+                <button>Apply</button>
+            </div>
+
+            <div class="job-card">
+                <h3>React Developer</h3>
+                <p class="company">Digital Innovations</p>
+                <p class="location">Noida, India</p>
+                <p class="desc">Seeking a React Developer with strong knowledge of hooks and state management.</p>
+                <button>Apply</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Data Analyst</h3>
+                <p class="company">Insight Analytics</p>
+                <p class="location">Chennai, India</p>
+                <p class="desc">Hiring a Data Analyst with knowledge of SQL, Excel, and data visualization tools.</p>
+                <button>Apply</button>
+            </div>
+
+            <div class="job-card">
+                <h3>DevOps Engineer</h3>
+                <p class="company">CloudNet Systems</p>
+                <p class="location">Gurgaon, India</p>
+                <p class="desc">Looking for a DevOps Engineer experienced in Docker, CI/CD pipelines, and AWS.</p>
+                <button>Apply</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

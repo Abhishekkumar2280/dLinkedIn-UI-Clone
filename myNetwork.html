@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Network - LinkedIn Clone</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background: #f3f2ef;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 50px;
+        background: white;
+        border-bottom: 1px solid #ddd;
+        position: sticky;
+        top: 0;
+    }
+
+    .logo {
+        font-weight: bold;
+        font-size: 22px;
+        color: #0a66c2;
+    }
+
+    .navbar input {
+        width: 300px;
+        padding: 7px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+    }
+
+    .nav-links a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+    }
+
+    .network-container {
+        display: flex;
+        width: 90%;
+        margin: 40px auto;
+        gap: 20px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 25%;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .sidebar h2 {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+    }
+
+    .sidebar li {
+        padding: 10px 0;
+        cursor: pointer;
+        color: #555;
+    }
+
+    .sidebar li:hover {
+        color: #0a66c2;
+    }
+
+    /* Content */
+    .content {
+        width: 75%;
+    }
+
+    .content h2 {
+        margin-bottom: 20px;
+    }
+
+    /* Cards */
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        width: 200px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
+        background: lightgray;
+        border-radius: 50%;
+        margin: 0 auto 15px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .card p {
+        font-size: 14px;
+        color: gray;
+        margin-bottom: 15px;
+    }
+
+    .card button {
+        padding: 8px 15px;
+        border: 1px solid #0a66c2;
+        background: white;
+        color: #0a66c2;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .card button:hover {
+        background: #0a66c2;
+        color: white;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">LinkedIn</div>
+        <input type="text" placeholder="Search" />
+        <div class="nav-links">
+            <a href="linkedin.html">Home</a>
+            <a href="myNetwork.html">My Network</a>
+            <a href="jobSection.html">Jobs</a>
+            <a href="messageSection.html">Messaging</a>
+            <a href="notificationSection.html">Notifications</a>
+        </div>
+    </nav>
+    <div class="network-container">
+
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <h2>Manage my network</h2>
+            <ul>
+                <li>Connections</li>
+                <li>Contacts</li>
+                <li>People I Follow</li>
+                <li>Groups</li>
+                <li>Events</li>
+                <li>Pages</li>
+                <li>Newsletters</li>
+            </ul>
+        </div>
+
+        <!-- Right Content -->
+        <div class="content">
+            <h2>People you may know</h2>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Rahul Sharma</h3>
+                    <p>Frontend Developer</p>
+                    <button>Connect</button>
+                </div>
+
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Anjali Verma</h3>
+                    <p>UI/UX Designer</p>
+                    <button>Connect</button>
+                </div>
+
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Amit Kumar</h3>
+                    <p>Software Engineer</p>
+                    <button>Connect</button>
+                </div>
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Abhijeet Kumar</h3>
+                    <p>Software Engineer</p>
+                    <button>Connect</button>
+                </div>
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Ankush Kumar</h3>
+                    <p>Mechanical Engineer</p>
+                    <button>Connect</button>
+                </div>
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Suman Kumar</h3>
+                    <p>Mechanical Engineer</p>
+                    <button>Connect</button>
+                </div>
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Priti Kumari</h3>
+                    <p>Mechanical Engineer</p>
+                    <button>Connect</button>
+                </div>
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Pooja Kumari</h3>
+                    <p>Software Engineer</p>
+                    <button>Connect</button>
+                </div>
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Beauti Rani</h3>
+                    <p>Software Engineer</p>
+                    <button>Connect</button>
+                </div>
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Ritesh Kumar</h3>
+                    <p>Software Engineer</p>
+                    <button>Connect</button>
+                </div>
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Satish Kumar</h3>
+                    <p>Mechanical Engineer</p>
+                    <button>Connect</button>
+                </div>
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Sontash Kumar</h3>
+                    <p>Mechanical Engineer</p>
+                    <button>Connect</button>
+                </div>
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Vikash Kumar</h3>
+                    <p>Mechanical Engineer</p>
+                    <button>Connect</button>
+                </div>
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Rupesh Kumar</h3>
+                    <p>Software Engineer</p>
+                    <button>Connect</button>
+                </div>
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Komal Kumari</h3>
+                    <p>Software Engineer</p>
+                    <button>Connect</button>
+                </div>
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Guriya Kumari</h3>
+                    <p>Software Engineer</p>
+                    <button>Connect</button>
+                </div>
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Anshu Kumari</h3>
+                    <p>Software Engineer</p>
+                    <button>Connect</button>
+                </div>
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Sarika Ada</h3>
+                    <p>Software Engineer</p>
+                    <button>Connect</button>
+                </div>
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Kajal kumari</h3>
+                    <p>Software Engineer</p>
+                    <button>Connect</button>
+                </div>
+                <div class="card">
+                    <div class="profile-img"></div>
+                    <h3>Suraj kumar</h3>
+                    <p>Civil Engineer</p>
+                    <button>Connect</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

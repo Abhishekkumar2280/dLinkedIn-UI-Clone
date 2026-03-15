@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="notification.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background: #f3f2ef;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 50px;
+        background: white;
+        border-bottom: 1px solid #ddd;
+        position: sticky;
+        top: 0;
+    }
+
+    .logo {
+        font-weight: bold;
+        font-size: 22px;
+        color: #0a66c2;
+    }
+
+    .navbar input {
+        width: 300px;
+        padding: 7px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+    }
+
+    .nav-links a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+    }
+
+    .notification-container {
+        width: 60%;
+        margin: 50px auto;
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+    }
+
+    .notification-container h2 {
+        margin-bottom: 20px;
+    }
+
+    /* Notification Card */
+    .notification-card {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+        cursor: pointer;
+    }
+
+    .notification-card:hover {
+        background: #f3f2ef;
+    }
+
+    /* Unread Highlight */
+    .unread {
+        background: #e8f3ff;
+    }
+
+    /* Profile Circle */
+    .profile-circle {
+        width: 45px;
+        height: 45px;
+        background: #0a66c2;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    /* Text */
+    .notification-text p {
+        margin-bottom: 5px;
+    }
+
+    .notification-text span {
+        font-size: 13px;
+        color: gray;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">LinkedIn</div>
+        <input type="text" placeholder="Search" />
+        <div class="nav-links">
+            <a href="linkedin.html">Home</a>
+            <a href="myNetwork.html">My Network</a>
+            <a href="jobSection.html">Jobs</a>
+            <a href="messageSection.html">Messaging</a>
+            <a href="notificationSection.html">Notifications</a>
+        </div>
+    </nav>
+
+    <div class="notification-container">
+
+        <h2>Notifications</h2>
+
+        <div class="notification-card unread">
+            <div class="profile-circle">R</div>
+            <div class="notification-text">
+                <p><strong>Rahul Sharma</strong> viewed your profile.</p>
+                <span>2 hours ago</span>
+            </div>
+        </div>
+
+        <div class="notification-card unread">
+            <div class="profile-circle">P</div>
+            <div class="notification-text">
+                <p><strong>Priya Verma</strong> liked your post.</p>
+                <span>5 hours ago</span>
+            </div>
+        </div>
+
+        <div class="notification-card">
+            <div class="profile-circle">T</div>
+            <div class="notification-text">
+                <p><strong>Tech Solutions</strong> posted a new job.</p>
+                <span>1 day ago</span>
+            </div>
+        </div>
+
+        <div class="notification-card">
+            <div class="profile-circle">A</div>
+            <div class="notification-text">
+                <p><strong>Aman Singh</strong> sent you a connection request.</p>
+                <span>2 days ago</span>
+            </div>
+        </div>
+        <div class="notification-card">
+            <div class="profile-circle">P</div>
+            <div class="notification-text">
+                <p><strong>Pooja Kumari</strong> sent you a connection request.</p>
+                <span>3 days ago</span>
+            </div>
+        </div>
+        <div class="notification-card">
+            <div class="profile-circle">S</div>
+            <div class="notification-text">
+                <p><strong>Shivani Kumari</strong> sent you a connection request.</p>
+                <span>1 days ago</span>
+            </div>
+        </div>
+        <div class="notification-card">
+            <div class="profile-circle">S</div>
+            <div class="notification-text">
+                <p><strong>Shivam Kumar</strong> sent you a connection request.</p>
+                <span>1 days ago</span>
+            </div>
+        </div>
+        <div class="notification-card">
+            <div class="profile-circle">L</div>
+            <div class="notification-text">
+                <p><strong>Lalit Kumar</strong> sent you a connection request.</p>
+                <span>1 days ago</span>
+            </div>
+        </div>
+        <div class="notification-card">
+            <div class="profile-circle">P</div>
+            <div class="notification-text">
+                <p><strong>Pushpa kumari</strong> sent you a connection request.</p>
+                <span>1 days ago</span>
+            </div>
+        </div>
+        <div class="notification-card">
+            <div class="profile-circle">P</div>
+            <div class="notification-text">
+                <p><strong>Priti kumari</strong> sent you a connection request.</p>
+                <span>2 days ago</span>
+            </div>
+        </div>
+        <div class="notification-card">
+            <div class="profile-circle">S</div>
+            <div class="notification-text">
+                <p><strong>Subhash kumar</strong> sent you a connection request.</p>
+                <span>2 days ago</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

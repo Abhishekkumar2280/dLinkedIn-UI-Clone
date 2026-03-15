@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+</head>
+<style>
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 50px;
+        background: white;
+        border-bottom: 1px solid #ddd;
+        position: sticky;
+        top: 0;
+    }
+
+    .logo {
+        font-weight: bold;
+        font-size: 22px;
+        color: #0a66c2;
+    }
+
+    .navbar input {
+        width: 300px;
+        padding: 7px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+    }
+
+    .nav-links a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+    }
+
+    .message-container {
+        width: 90%;
+        margin: 40px auto;
+        display: flex;
+        gap: 20px;
+    }
+
+    /* Chat List */
+    .chat-list {
+        width: 30%;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        height: 500px;
+        overflow-y: auto;
+    }
+
+    .chat-list h2 {
+        margin-bottom: 20px;
+    }
+
+    .chat-item {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+        cursor: pointer;
+    }
+
+    .chat-item:hover {
+        background: #f3f2ef;
+    }
+
+    .chat-item h4 {
+        margin-bottom: 5px;
+    }
+
+    .chat-item p {
+        font-size: 13px;
+        color: gray;
+    }
+
+    /* Chat Window */
+    .chat-window {
+        width: 70%;
+        background: white;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+
+    /* Header */
+    .chat-header {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+        font-weight: bold;
+    }
+
+    /* Messages Area */
+    .chat-messages {
+        flex: 1;
+        padding: 20px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Message Bubble */
+    .message {
+        padding: 10px 15px;
+        border-radius: 20px;
+        max-width: 60%;
+        font-size: 14px;
+    }
+
+    .received {
+        background: #f3f2ef;
+        align-self: flex-start;
+    }
+
+    .sent {
+        background: #0a66c2;
+        color: white;
+        align-self: flex-end;
+    }
+
+    /* Input Area */
+    .chat-input {
+        padding: 15px;
+        border-top: 1px solid #eee;
+        display: flex;
+        gap: 10px;
+    }
+
+    .chat-input input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+    }
+
+    .chat-input button {
+        padding: 10px 20px;
+        background: #0a66c2;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .chat-input button:hover {
+        background: #004182;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">LinkedIn</div>
+        <input type="text" placeholder="Search" />
+        <div class="nav-links">
+            <a href="linkedin.html">Home</a>
+            <a href="myNetwork.html">My Network</a>
+            <a href="jobSection.html">Jobs</a>
+            <a href="messageSection.html">Messaging</a>
+            <a href="notificationSection.html">Notifications</a>
+        </div>
+    </nav>
+    <div class="message-container">
+
+        <!-- Left Chat List -->
+        <div class="chat-list">
+            <h2>Messaging</h2>
+
+            <div class="chat-item">
+                <h4>Rahul Sharma</h4>
+                <p>Hey, are you available for interview?</p>
+            </div>
+
+            <div class="chat-item">
+                <h4>Priya Verma</h4>
+                <p>Please check the project details.</p>
+            </div>
+
+            <div class="chat-item">
+                <h4>Aman Singh</h4>
+                <p>Let's connect tomorrow.</p>
+            </div>
+
+            <div class="chat-item">
+                <h4>HR - Tech Solutions</h4>
+                <p>Your application is shortlisted.</p>
+            </div>
+        </div>
+
+        <!-- Right Chat Window -->
+        <div class="chat-window">
+
+            <div class="chat-header">
+                <h3>Rahul Sharma</h3>
+            </div>
+
+            <div class="chat-messages">
+                <div class="message received">
+                    Hi Abhishek, we reviewed your profile.
+                </div>
+
+                <div class="message sent">
+                    Thank you! Looking forward to hearing from you.
+                </div>
+
+                <div class="message received">
+                    Are you available for interview tomorrow?
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <input type="text" placeholder="Write a message...">
+                <button>Send</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
